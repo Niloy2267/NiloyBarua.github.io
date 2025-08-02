@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Niloy Barua | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Niloy Barua</h1>
+    <p><span class="typewriter"></span></p>
+    <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a CSE student passionate about web development, design, and building real-world applications using Java and frontend technologies.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Graphics</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Online Shopping System</h3>
+      <p>A Java-based shopping application using OOP and Swing, featuring user registration, cart system, payment methods, and admin panel.</p>
+      <a href="https://github.com/Niloy2267/OnlineShoppingSystemGUI" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:niloybarua953@gmail.com">niloybarua953@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/niloy-barua-084249329/" target="_blank">View Profile</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Niloy Barua</p>
+  </footer>
+
+<script>
+  const toggle = document.getElementById("darkModeToggle");
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+
+  const typeTarget = document.querySelector(".typewriter");
+  const words = ["CSE Student", "Web Developer", "Creative Thinker"];
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function type() {
+    const current = words[wordIndex];
+    const typed = current.substring(0, charIndex);
+    typeTarget.textContent = typed;
+
+    if (!isDeleting && charIndex < current.length) {
+      charIndex++;
+      setTimeout(type, 100);
+    } else if (isDeleting && charIndex > 0) {
+      charIndex--;
+      setTimeout(type, 50);
+    } else {
+      isDeleting = !isDeleting;
+      if (!isDeleting) wordIndex = (wordIndex + 1) % words.length;
+      setTimeout(type, 1000);
+    }
+  }
+  type();
+</script>
+</body>
+</html>

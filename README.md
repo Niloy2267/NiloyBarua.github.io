@@ -5,7 +5,7 @@ It showcases basic information about me, my skills, and projects.
 
 ## Live Demo
 
-You can see the live website here: 
+You can see the live website here:
 [https://Niloy2267.github.io/NiloyBarua.github.io/](https://Niloy2267.github.io/NiloyBarua.github.io/)
 
 ## Features

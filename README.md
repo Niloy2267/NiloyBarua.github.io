@@ -16,6 +16,6 @@ You can see the live website here:
 
 ## How to Run Locally
 
-1. Clone the repository: 
+1. Clone the repository:
    ```bash
    git clone https://github.com/Niloy2267/NiloyBarua.github.io.git

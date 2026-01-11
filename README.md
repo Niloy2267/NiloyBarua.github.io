@@ -11,7 +11,7 @@ You can see the live website here:
 ## Features
 
 - Simple and clean design with HTML & CSS
-- Responsive layout
+- Responsive layout.
 - Easy to customize.
 
 ## How to Run Locally

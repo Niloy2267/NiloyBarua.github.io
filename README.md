@@ -12,7 +12,7 @@ You can see the live website here:
 
 - Simple and clean design with HTML & CSS
 - Responsive layout
-- Easy to customize
+- Easy to customize.
 
 ## How to Run Locally
 

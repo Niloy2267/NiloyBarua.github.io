@@ -1,4 +1,4 @@
-# Niloy Barua Portfolio Website
+## Niloy Barua Portfolio Website
 
 This is the personal portfolio website of Niloy Barua.  
 It showcases basic information about me, my skills, and projects.
